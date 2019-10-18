@@ -9,10 +9,13 @@
 ## 1、shell命令调用，如exec.js	
 
  * 注意点：
-  ** 1.1、window上用exec 调shell，需要在exec配置shell: process.platform === 'win32'	
  
-  ** 1.2、如果将服务放到linux上，若执行sh ./xxx.sh出现：“Syntax error: “(” unexpected” ,那么 在linux系统执行sudo dpkg-reconfigure dash 再选择项中选No，搞定了`	
+  * 1.1、window上用exec 调shell，需要在exec配置shell: process.platform === 'win32'	
+ 
+  * 1.2、如果将服务放到linux上，若执行sh ./xxx.sh出现：“Syntax error: “(” unexpected” ,那么 在linux系统执行sudo dpkg-reconfigure dash 再选择项中选No，搞定了`	
+  
 
 ## 2、直接调用jenkins如deploy-jenkins.js
+
 
  * 注意点：首选需要在jenkins的 Build Triggers中一致
